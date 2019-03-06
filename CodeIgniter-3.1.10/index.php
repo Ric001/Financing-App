@@ -1,4 +1,7 @@
 <?php
+
+include('install_contenidos.php');
+
 /**
  * CodeIgniter
  *
