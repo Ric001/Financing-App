@@ -11,7 +11,7 @@ class ModelAdministradores extends CI_Model
      public function guardarDirecciones($param)
      {
  
-         $this->db->insert();
+         $this->db->insert("Direcciones");
      }
       
      //funcion para obtener Direcciones en la BD
@@ -19,19 +19,19 @@ class ModelAdministradores extends CI_Model
          {
              $this->db->select(); 
              $this->db->from();
-             $query = $this->db->get();
+             $query = $this->db->get("Direcciones");
              return $query->result();
          }
      //funcion para borrar Direcciones    
      public function deleteDirecciones($id){
              $this->db->where();
-             $this->db->delete();
+             $this->db->delete("Direcciones");
              }   
      //funcion para actualizar datos         
      public function updateDirecciones($param)
      {
          $this->db->where();
-         $this->db->update();
+         $this->db->update("Direcciones");
      } 
 }
 

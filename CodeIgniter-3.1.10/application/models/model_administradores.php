@@ -10,7 +10,7 @@ class ModelAdministradores extends CI_Model
     public function guardarAdmin($param)
     {
 
-        $this->db->insert();
+        $this->db->insert("Administradores");
     }
      
     //funcion para obtener admins 
@@ -18,19 +18,19 @@ class ModelAdministradores extends CI_Model
         {
             $this->db->select(); 
             $this->db->from();
-            $query = $this->db->get();
+            $query = $this->db->get("Administradores");
             return $query->result();
         }
     //funcion para borrar admins    
     public function deleteAdmin($id){
             $this->db->where();
-            $this->db->delete();
+            $this->db->delete("Administradores");
             }   
     //funcion para actualizar datos         
     public function updateAdmin($param)
     {
         $this->db->where();
-        $this->db->update();
+        $this->db->update("Administradores");
     }        
         
 }

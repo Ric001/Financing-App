@@ -11,7 +11,7 @@ class ModelAdministradores extends CI_Model
      public function guardarCliente($param)
      {
  
-         $this->db->insert();
+         $this->db->insert("Clientes");
      }
       
      //funcion para obtener Cliente 
@@ -19,19 +19,19 @@ class ModelAdministradores extends CI_Model
          {
              $this->db->select(); 
              $this->db->from();
-             $query = $this->db->get();
+             $query = $this->db->get("Clientes");
              return $query->result();
          }
      //funcion para borrar Cliente    
      public function deleteCliente($id){
              $this->db->where();
-             $this->db->delete();
+             $this->db->delete("Clientes");
              }   
      //funcion para actualizar datos         
      public function updateCliente($param)
      {
          $this->db->where();
-         $this->db->update();
+         $this->db->update("Clientes");
      } 
 }
 

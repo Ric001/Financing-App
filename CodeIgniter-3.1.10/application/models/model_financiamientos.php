@@ -11,7 +11,7 @@ class ModelAdministradores extends CI_Model
      public function guardarFinanciamientos($param)
      {
  
-         $this->db->insert();
+         $this->db->insert("Financiamientos");
      }
       
      //funcion para obtener Financiamientos
@@ -19,19 +19,19 @@ class ModelAdministradores extends CI_Model
          {
              $this->db->select(); 
              $this->db->from();
-             $query = $this->db->get();
+             $query = $this->db->get("Financiamientos");
              return $query->result();
          }
      //funcion para borrar Financiamientos    
      public function deleteFinanciamientos($id){
              $this->db->where();
-             $this->db->delete();
+             $this->db->delete("Financiamientos");
              }   
      //funcion para actualizar datos         
      public function updateFinanciamientos($param)
      {
          $this->db->where();
-         $this->db->update();
+         $this->db->update("Financiamientos");
      } 
 }
 

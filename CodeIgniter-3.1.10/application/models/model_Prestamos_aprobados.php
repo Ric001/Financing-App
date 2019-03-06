@@ -11,7 +11,7 @@ class ModelAdministradores extends CI_Model
      public function guardarPrestamos_aprobados($param)
      {
  
-         $this->db->insert();
+         $this->db->insert("Prestamos_Aprobados");
      }
       
      //funcion para obtener Prestamos_aprobados 
@@ -19,19 +19,19 @@ class ModelAdministradores extends CI_Model
          {
              $this->db->select(); 
              $this->db->from();
-             $query = $this->db->get();
+             $query = $this->db->get("Prestamos_Aprobados");
              return $query->result();
          }
      //funcion para borrar Prestamos_aprobados    
      public function deletePrestamos_aprobados($id){
              $this->db->where();
-             $this->db->delete();
+             $this->db->delete("Prestamos_Aprobados");
              }   
      //funcion para actualizar datos         
      public function updatePrestamos_aprobados($param)
      {
          $this->db->where();
-         $this->db->update();
+         $this->db->update("Prestamos_Aprobados");
      } 
 }
 

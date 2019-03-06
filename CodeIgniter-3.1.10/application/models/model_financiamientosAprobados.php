@@ -11,7 +11,7 @@ class ModelAdministradores extends CI_Model
      public function guardarFinanciemientos_aprobados($param)
      {
  
-         $this->db->insert();
+         $this->db->insert("Financiamientos_Aprobados");
      }
       
      //funcion para obtener Financiemientos_aprobados 
@@ -19,19 +19,19 @@ class ModelAdministradores extends CI_Model
          {
              $this->db->select(); 
              $this->db->from();
-             $query = $this->db->get();
+             $query = $this->db->get("Financiamientos_Aprobados");
              return $query->result();
          }
      //funcion para borrar Financiemientos_aprobados    
      public function deleteFinanciemientos_aprobados($id){
              $this->db->where();
-             $this->db->delete();
+             $this->db->delete("Financiamientos_Aprobados");
              }   
      //funcion para actualizar datos         
      public function updateFinanciemientos_aprobados($param)
      {
          $this->db->where();
-         $this->db->update();
+         $this->db->update("Financiamientos_Aprobados");
      } 
 }
 
